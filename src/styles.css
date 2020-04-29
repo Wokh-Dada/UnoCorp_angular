@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 
 * {
@@ -12,9 +12,7 @@
 }
 
 .logo {
-
   font-size: 25px;
-  margin-top: 37px;
 }
 
 .logo a {
@@ -34,7 +32,13 @@
 }
 
 .header_menu {
-  margin-top: 37px;
+  height: 100px;
+  margin: auto;
+  align-items: center;
+}
+
+.nav {
+  align-items: center;
 }
 
 .nav-item_icon {
@@ -243,7 +247,7 @@
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-align: center;
-  width: 830px;
+  max-width: 830px;
   margin: auto;
 }
 
@@ -256,7 +260,7 @@
   font-family: "Gilroy";
   color: rgb(255, 255, 255);
   text-align: center;
-  width: 630px;
+  max-width: 630px;
   padding-top: 20px;
   margin: auto;
 }
@@ -323,7 +327,7 @@
 }
 
 .title_blockTwo {
-  width: 770px;
+  max-width: 770px;
   margin: auto;
   text-align: center;
   font-size: 32px;

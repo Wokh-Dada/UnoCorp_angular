@@ -1,13 +1,13 @@
 <header class="container-fluid BG">
   <div class="container">
-    <div class="row">
+    <div class="row header_menu">
       <div class="col-3 logo">
         <a href="">
           <img class="logo_image" src="../../assets/image/Logo.png" alt="">
           <span class="logoTextbold">UNI</span><span class="logoTextnormal">CORP</span>
         </a>
       </div>
-      <div class="col-9 header_menu">
+      <div class="col-9">
         <nav class="nav navbar-expand-lg">
           <button class="navbar-toggler" type="button" data-toggle="collapse"
                   data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
@@ -19,45 +19,41 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <div class="nav">
-              <div class="nav-item">
-                <a class="nav-link header_menu_link" href="#">Home</a>
-                <div class="pop-ap_menu">
+              <div class="nav-item" *ngFor="let item of menu">
+                <a class="nav-link header_menu_link" href="#">{{item.nameLink}}</a>
+                <div class="pop-ap_menu" *ngIf="item.complited === true">
                   <a href="#" class="pop-app_menu_item">Homepage Main</a>
-                  <div class="pop-app_menu_item_link_block">
-                    <span class="nav-item_icon">
+                  <div>
+                    <div class="pop-app_menu_item_link_block">
+                      <span class="nav-item_icon">
                       <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </span>
-                    <a href="#" class="pop-app_menu_item">Homepage Finance</a>
-                    <div class="pop-app_menu_item_link">
-                      <a href="#" class="pop-app_menu_item">Homepage App</a>
-                      <a href="#" class="pop-app_menu_item">Homepage Startup</a>
-                      <a href="#" class="pop-app_menu_item">Homepage Business</a>
+                      <a href="#" class="pop-app_menu_item">Homepage Finance</a>
+                      <div class="pop-app_menu_item_link">
+                        <a href="#" class="pop-app_menu_item">Homepage App</a>
+                        <a href="#" class="pop-app_menu_item">Homepage Startup</a>
+                        <a href="#" class="pop-app_menu_item">Homepage Business</a>
+                      </div>
                     </div>
                   </div>
-                  <a href="#" class="pop-app_menu_item">Homepage App</a>
-                  <a href="#" class="pop-app_menu_item">Homepage Startup</a>
-                  <a href="#" class="pop-app_menu_item">Homepage Business</a>
-                  <a href="#" class="pop-app_menu_item">Homepage SaaS</a>
-                  <a href="#" class="pop-app_menu_item">Homepage Portfolio</a>
-                  <a href="#" class="pop-app_menu_item">Homepage Consulting</a>
-                  <a href="#" class="pop-app_menu_item">Homepage Crporate</a>
+                  <div>
+                    <div class="pop-app_menu_item_link_block">
+                      <span class="nav-item_icon">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </span>
+                      <a href="#" class="pop-app_menu_item">{{item.popup.popupItemName}}</a>
+                      <div class="pop-app_menu_item_link">
+                        <a href="#" class="pop-app_menu_item">Homepage App</a>
+                        <a href="#" class="pop-app_menu_item">Homepage Startup</a>
+                        <a href="#" class="pop-app_menu_item">Homepage Business</a>
+                      </div>
+                    </div>
+                  </div>
+
+
                 </div>
               </div>
-              <div class="nav-item">
-                <a class="nav-link header_menu_link" href="#">About</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link header_menu_link" href="#">Services</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link header_menu_link" href="#">Work</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link header_menu_link" href="#">Pricing</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link header_menu_link" href="#">Blog</a>
-              </div>
+
               <div class="header_nav_cart">
                 <i class="fa fa-shopping-cart alig" aria-hidden="true"></i>
               </div>
