@@ -24,96 +24,21 @@
     </div>
     <div class="col-12">
       <div class="row services_main_block_block_three">
-        <div class="col-lg-3 col-md-6 ">
-          <div class="first_info_blockSevices_block_three blockSevices_hover">
+        <div class="col-lg-3 col-md-6" *ngFor="let item of sevicesBlock">
+          <div class="{{item.class}} blockSevices_hover">
             <div>
               <div class="services_blocks_icons_block_three">
                 <div class="services_bloks_icon_block_three">
                   <div class="services_icon_block_three">
-                    <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                    <i class="{{item.iconClass}}" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
             </div>
             <div class="services_bloks_titles_block_three">
-              Capital
+              {{item.title}}
               <div class="services_bloks_subtitles_block_three">
-                We help organisations become fit for humans and fit for the future.
-              </div>
-            </div>
-            <div class="services_bloks_btn_block_three">
-              Learn More
-              <div class="services_bloks_btn_icon_block_three">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 ">
-          <div class="second_info_blockSevices_block_three blockSevices_hover">
-            <div>
-              <div class="services_blocks_icons_block_three">
-                <div class="services_bloks_icon_block_three">
-                  <div class="services_icon_block_three">
-                    <i class="fa fa-comment-o" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="services_bloks_titles_block_three">
-              Consulting
-              <div class="services_bloks_subtitles_block_three">
-                We help organisations become fit for humans and fit for the future.
-              </div>
-            </div>
-            <div class="services_bloks_btn_block_three">
-              Learn More
-              <div class="services_bloks_btn_icon_block_three">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="first_info_blockSevices_block_three blockSevices_hover">
-            <div>
-              <div class="services_blocks_icons_block_three">
-                <div class="services_bloks_icon_block_three">
-                  <div class="services_icon_block_three">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="services_bloks_titles_block_three">
-              Analitics
-              <div class="services_bloks_subtitles_block_three">
-                We help organisations become fit for humans and fit for the future.
-              </div>
-            </div>
-            <div class="services_bloks_btn_block_three">
-              Learn More
-              <div class="services_bloks_btn_icon_block_three">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 ">
-          <div class="second_info_blockSevices_block_three blockSevices_hover">
-            <div>
-              <div class="services_blocks_icons_block_three">
-                <div class="services_bloks_icon_block_three">
-                  <div class="services_icon_block_three">
-                    <i class="fa fa-line-chart" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="services_bloks_titles_block_three">
-              Payroll
-              <div class="services_bloks_subtitles_block_three">
-                We help organisations become fit for humans and fit for the future.
+                {{item.content}}
               </div>
             </div>
             <div class="services_bloks_btn_block_three">

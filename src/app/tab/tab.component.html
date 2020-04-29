@@ -7,33 +7,13 @@
     </div>
     <div class="col-lg-5 col-md-12">
       <div class="row block_two_left_section_margin">
-        <div class="col-12  d-flex justify-content-center">
+        <div class="col-12  d-flex justify-content-center" *ngFor="let item of leftSection">
           <div class="block_two_left_section">
             <div class="left_section_what_we_do">
-              What we do
+              {{item.title}}
             </div>
             <div class="left_section_we_do">
-              We are in the business of helping
-            </div>
-          </div>
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-          <div class="block_two_left_section">
-            <div class="left_section_what_we_do">
-              How we do
-            </div>
-            <div class="left_section_we_do">
-              Creating sustainable change and transformation
-            </div>
-          </div>
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-          <div class="block_two_left_section">
-            <div class="left_section_what_we_do">
-              Who we are
-            </div>
-            <div class="left_section_we_do">
-              Better equipped for creating a better future
+              {{item.subtitle}}
             </div>
           </div>
         </div>

@@ -347,6 +347,7 @@
   height: 155px;
   border: 1px solid #e6e0c8;
   border-radius: 7px;
+  transition: 0.3s;
 }
 
 .block_two_left_section:hover {
@@ -463,6 +464,7 @@
   padding: 0 42px 0 30px;
   margin-top: 60px;
   border-radius: 15px;
+  transition: 0.5s;
 }
 
 .blockSevices_hover:hover {
@@ -489,6 +491,7 @@
   box-shadow: 0 0 13px hsla(224, 36%, 70%, 0.51);
   padding: 0 42px 0 30px;
   border-radius: 15px;
+  transition: 0.5s;
 }
 
 .services_bloks_btn_icon_block_three {

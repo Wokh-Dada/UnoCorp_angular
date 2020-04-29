@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-services',
@@ -6,8 +6,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements OnInit {
+  sevicesBlock = [
+    {
+      class: "first_info_blockSevices_block_three",
+      title: 'Capital',
+      content: 'We help organisations become fit for humans and fit for the future.',
+      iconClass: "fa fa-pie-chart"
+    },
+    {
+      class: "second_info_blockSevices_block_three",
+      title: 'Consulting',
+      content: 'We help organisations become fit for humans and fit for the future.',
+      iconClass: "fa fa-arrow-right"
+    },
+    {
+      class: "first_info_blockSevices_block_three",
+      title: 'Analitics',
+      content: 'We help organisations become fit for humans and fit for the future.',
+      iconClass: "fa fa-bar-chart"
+    },
+    {
+      class: "second_info_blockSevices_block_three",
+      title: 'Capital',
+      content: 'We help organisations become fit for humans and fit for the future.',
+      iconClass: "fa fa-line-chart"
+    },
+  ]
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
