@@ -1,1 +1,1 @@
-[Перейти к промотру](https://wokh-dada.github.io/UnoCorp/)
+- [Перейти к промотру](https://wokh-dada.github.io/UnoCorp/)
