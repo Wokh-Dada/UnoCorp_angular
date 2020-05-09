@@ -33,7 +33,6 @@
 
 .header_menu {
   height: 100px;
-  margin: auto;
   align-items: center;
 }
 
@@ -66,7 +65,6 @@
   position: absolute;
   display: none;
   width: 227px;
-  left: -57px;
   z-index: 1000;
   padding: 21px 0 3px 25px;
   font-size: 15px;
@@ -270,7 +268,7 @@
 }
 
 .header_content_btns {
-  width: 400px;
+  max-width: 400px;
   margin: auto;
 }
 
@@ -462,7 +460,6 @@
 .first_info_blockSevices_block_three {
   box-shadow: 0 0 13px hsla(224, 36%, 70%, 0.51);
   padding: 0 42px 0 30px;
-  margin-top: 60px;
   border-radius: 15px;
   transition: 0.5s;
 }
@@ -1078,7 +1075,7 @@
   }
 
   .header_content_btns {
-    padding-left: calc(50% - 90px);
+    text-align: center;
   }
 
   .header_content_btn_left {
@@ -1089,9 +1086,9 @@
     display: none;
   }
 
-  .btn_five_block {
-    margin-left: calc(50% - 93px);
-  }
+  /*.btn_five_block {*/
+  /*  margin-left: calc(50% - 93px);*/
+  /*}*/
 
   .seven_block {
     background-image: url("https://avatars.mds.yandex.net/get-pdb/51720/f5efd0aa-e983-403f-bae7-52c7070d1ff6/s600");
@@ -1102,11 +1099,9 @@
   }
 
   .outer {
-    top: 0;
-    left: auto;
-    margin: auto;
     max-height: 720px;
-    padding: 20px 9px 0 11px;
+    padding: 30px 30px 0px 30px;
+    border-radius: 10px;
   }
 
   .Comments {
@@ -1142,10 +1137,6 @@
     margin: 0 0 35px 0;
     width: 100%;
     height: 440px;
-  }
-
-  .title_links_sm {
-    margin-top: 40px;
   }
 
   .navbar-toggler-icon {
@@ -1240,10 +1231,6 @@
     margin: auto;
   }
 
-  .title_links {
-    padding-top: 25px;
-  }
-
   .Comments {
     padding-top: 0;
   }
@@ -1304,7 +1291,7 @@
   .first_info_blockSevices_block_three {
     width: 100%;
     height: 440px;
-    margin: 0 0 30px 0;
+    margin: 0px 0 30px 0;
   }
 
   .second_info_blockSevices_block_three {
@@ -1337,8 +1324,16 @@
     text-align: center;
   }
 
+  .block_six {
+    background: none;
+  }
+
   .footer {
     height: 100%;
+  }
+
+  .title_links_sm {
+    margin-top: 40px;
   }
 }
 
@@ -1347,6 +1342,10 @@
   .block_six {
     background-size: 100% 100%;
     background-repeat: no-repeat;
+  }
+
+  .first_info_blockSevices_block_three {
+    margin-top: 60px !important;
   }
 
   .seven_block {
@@ -1363,12 +1362,19 @@
 
 @media (max-width: 1200px) {
 
-
 }
 
 @media (min-width: 1200px) {
 
   .container {
     max-width: 1170px;
+  }
+
+  .header_nav_btn {
+    margin-left: 45px;
+  }
+
+  .header_nav_search {
+    margin-left: 35px;
   }
 }

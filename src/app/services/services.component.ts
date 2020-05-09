@@ -20,7 +20,7 @@ export class ServicesComponent implements OnInit {
       iconClass: "fa fa-arrow-right"
     },
     {
-      class: "first_info_blockSevices_block_three",
+      class: "first_info_blockSevices_block_three mt-4 mt-md-0",
       title: 'Analitics',
       content: 'We help organisations become fit for humans and fit for the future.',
       iconClass: "fa fa-bar-chart"

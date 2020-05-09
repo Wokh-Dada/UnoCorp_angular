@@ -29,6 +29,11 @@ export class HeaderComponent implements OnInit {
     {nameLink: "Pricing", complited: false},
     {nameLink: "Blog", complited: false}
   ]
+  search = false;
+  toggleSearch(){
+    return this.search =!this.search
+  }
+
 
   constructor() {
   }
